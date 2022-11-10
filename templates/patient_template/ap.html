@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color:rgb(29, 8, 107);
+        }
+        
+        li {
+          float: right;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: rgb(29, 8, 107);
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .container {
+    background-color: #fff;
+    width: 45%;
+    margin: 30px auto;
+    height: auto;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  }
+    select{
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display:inline-flex;
+  padding: 15px 13px;
+            margin: 75px 150px;
+            box-sizing: border-box;
+}
+
+button {
+  background-color: #4282e2;
+  color: hsl(227, 24%, 93%);
+  padding: 14px 16px;
+  margin: 8px 0;
+  border: none;
+  
+  text-align: center;
+  
+}
+div button{
+position: relative;
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+
+    margin: auto;
+
+    font-family: inherit;
+    border: 2px solid rgb(194, 189, 189);
+}
+        </style>
+</head>
+<body>
+    
+   
+    <ul>
+
+        <li>
+          <a class="active" href="#home">
+            
+              <i class="fa fa-home" style="font-size:48px;color:white"></i>
+              <br>
+            </a>
+            </li>
+          <h1 style="text-align:center; color: white;">Book Appoinment</h1>
+    
+        
+      </ul>
+      <br>
+<br>
+
+<div class="img-container">
+<img src="{% static 'images/appoinment Image 2022-11-01 at 10.17.55 AM.jpeg' %}">
+
+
+<form action="appoinment2">
+<select placeholder="select department">
+    <option>Select Deparment</option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select>
+    <option>Select Doctor</option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+
+</select><br>
+<br>
+<br><br>
+<button>NEXT</button>
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color:rgb(29, 8, 107);
+        }
+        
+        li {
+          float: right;
+        }
+        
+        a {
+          text-align: right;
+          display: block;
+          /* color: white; */
+          text-align: center;
+          padding: 20px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: rgb(29, 8, 107);
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .container {
+    background-color:none;
+    display: flex;
+    margin: 30px auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    /* box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);  */
+  }
+    select{
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display:inline-flex;
+  padding: 10px 15px;
+            margin: 75px 150px;
+            box-sizing: border-box;
+}
+
+button {
+  background-color: #4282e2;
+  color: hsl(227, 24%, 93%);
+  padding: 14px 16px;
+  margin: 8px 0;
+  border: none;
+  
+  text-align: center;
+  
+}
+div button{
+position: relative;
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+
+    margin: auto;
+
+    font-family: inherit;
+    border: 2px solid white;
+}
+/* .topnav-centered a {
+  float: block;
+  
+  top: 100%;
+  left: 10%;
+  position:initial;
+  
+    transform: none;
+}
+li {
+          float: right;
+} */
+/* .bi-chevron-left a {
+  position: relative;
+    justify-content: left;
+   
+    display:block;
+
+    margin: auto;
+
+    font-family: inherit;
+    border: 2px solid rgb(194, 189, 189);
+
+} */
+/* a .doctoricon{
+  display: inline-block;
+  
+          color: white;
+          text-align: center;
+          padding: 20px 16px;
+          text-decoration: none;
+
+ } */
+ input[type="date"] {
+      width: 70%;
+      padding: 5px 10px 5px 10px;
+      margin: 0;
+      color: #8a8b8e;
+      border: 1px solid #c2c0ca;
+      font-style: normal;
+      font-size: 16px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+
+      background: none;
+
+      display: block;
+      box-sizing: border-box;
+      width: 50%;
+      outline: none;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 4px;
+    }
+
+        </style>
+</head>
+<body>
+    
+<ul>
+
+  <li>
+    <a class="active" href="#home">
+      
+      
+      </a>
+      </li>
+    <h1 style="text-align:center; color: #ccc;">Book Appoinment</h1>
+    
+    
+<!--     
+    
+<li>
+  <a class="active" href="#home" id="li">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+      </svg>
+    
+    </a>
+    </li> -->
+</ul>
+
+
+
+  
+<!-- 
+    <li><a class="active" href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+          </svg>
+        
+        </a></li>
+        -->
+</ul>
+<br>
+<br>
+<div class="row">
+   <div class="col-lg-1">
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" fill="currentColor" class="bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+      </a>
+
+
+       
+    </div>
+<div class="col-"></div>
+
+<div class="col-lg-1">
+  <!-- <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" fill="currentColor" class="bi-chevron-left" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    </svg>
+  </a> -->
+
+  <a>
+    <img src="{% static 'images/icons8-doctor-64.png' %}"> <b>
+  </a>
+
+</div>
+
+
+  <div class="col-lg-2">
+<!-- 
+  <a>
+    <img src="{% static 'images/icons8-doctor-64.png' %}"> <b>Doctor Name
+      Department</b>
+  </a> -->
+<br>
+  <div class="col-1">
+    <h4 style="font-style:inherit ;">Doctor Name</h4>
+    <h5>Department</h5>
+  
+
+   
+</div></div> 
+</div>                             
+<form>
+  <div class="container">
+    <input type="date">
+
+    </div>
+
+    <h1 style="text-align: center; color:orangered;">Available Slots/Tokens</h1>
+    <hr>
+
+    <button type="button" class="btn btn-light">09:00AM</button>
+    <button type="button" class="btn btn-light">09:30AM</button>
+    <button type="button" class="btn btn-light">10:00AM</button>
+
+    <button type="button" class="btn btn-light">10:30AM</button>
+    <button type="button" class="btn btn-light">11:00AM</button>
+    <button type="button" class="btn btn-light">11:30AM</button>
+    <button type="button" class="btn btn-light">12:00PM</button>
+    <button type="button" class="btn btn-light">12:30PM</button>
+    <button type="button" class="btn btn-light">01:00PM</button>
+    <button type="button" class="btn btn-light">01:30PM</button>
+    <button type="button" class="btn btn-light">02:00PM</button>
+
+    <button type="button" class="btn btn-light">02:30PM</button>
+    <button type="button" class="btn btn-light">03:00PM</button>
+    <button type="button" class="btn btn-light">03:30PM</button>
+    <button type="button" class="btn btn-light">04:00PM</button>
+    <button type="button" class="btn btn-light">04:30PM</button>
+    <button type="button" class="btn btn-light">05:00PM</button>
+
+    <button type="button" class="btn btn-light">05:30PM</button>
+    <button type="button" class="btn btn-light">06:00PM</button>
+    <button type="button" class="btn btn-light">06:30PM</button>
+
+    <button type="button" class="btn btn-light">07:00PM</button>
+    <button type="button" class="btn btn-light">07:30PM</button>
+    <button type="button" class="btn btn-light">08:00PM</button>
+
+    <button type="button" class="btn btn-light">08:30PM</button>
+    <button type="button" class="btn btn-light">09:00PM</button>
+    <button type="button" class="btn btn-light">09:30PM</button>
+    <button type="button" class="btn btn-light">10:00PM</button>
+    <button type="button" class="btn btn-light">10:30PM</button>
+    <button type="button" class="btn btn-light">11:00PM</button>
+
+    <button type="button" class="btn btn-light">Light</button>
+
+
+    </form>
+
+</body>
+</html>
+
+
+
