@@ -15,10 +15,6 @@ def patient_appoinment(request):
 def patient_appoinment2(request):
     return render(request,'patient_template/appoinment2.html')    
 
-  
-    
-def patient_appoi(request):
-    return render(request,'patient_template/appoi.html')    
 
         
 def patient_appoinment3(request):
@@ -28,7 +24,3 @@ def patient_appoinment3(request):
 def patient_appoinment4(request):
     return render(request,'patient_template/appoinment4.html')    
 
-
-            
-def patient_appoinmenttt(request):
-    return render(request,'patient_template/appoinmenttt.html')    
